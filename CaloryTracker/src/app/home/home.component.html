@@ -1,0 +1,26 @@
+<div class="searchbox"><p>search<br><input type="text"></p></div>
+<!-- <a href="#" routerLink="/form"><button class="add-btn">Add New Food</button></a> -->
+<div class="new-food">
+    <button (click)="enableUserToAddFood()" class="new-food-button">Add New Food</button>
+    <br>
+    <div *ngIf="isEditing">
+      <div>
+        <br>
+        <label for="new-food-name">Name </label>
+        <input type="text" [(ngModel)]="newFoodName">
+        <br> <br>
+      </div>
+      <div>
+        <label for="new-food-calories">Calories </label>
+        <input type="text" [(ngModel)]="newFoodCalories">
+        <br> <br>
+      </div>
+      <div>
+        <label for="new-food-name">Image </label>
+        <input type="text" [(ngModel)]="newFoodImage">
+        <br> <br>
+      </div>
+
+      <button (click)="newFood()" class="add-button">Add Food</button>
+    </div>
+  </div>

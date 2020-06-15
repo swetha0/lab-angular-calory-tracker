@@ -1,0 +1,21 @@
+.add-btn{
+    /* text-align: center; */
+    background-color: orangered;
+    color:white;
+    border-radius: 0px;
+    margin-left: 25%;
+    padding: 0.5em;
+}
+.searchbox{
+    text-align: center;
+    border-radius: 0px;
+}
+input{
+    height:30px;
+    width: 350px;
+    border: 1px solid gray;
+}
+p{
+    font-size: 1.5em;
+}
+
